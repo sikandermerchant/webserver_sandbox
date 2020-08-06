@@ -56,7 +56,7 @@ app.get("/weather", (req, res) => {
     longitude,
     latitude,
     location
-  }) => {
+  } = {}) => {
     if (error) {
       return res.send({
         error
